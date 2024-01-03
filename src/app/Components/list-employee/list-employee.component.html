@@ -1,0 +1,40 @@
+<h3>List of Employees</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">FirstName</th>
+      <th scope="col">LastNmae</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employees">
+      <td>{{emp.firstname}}</td>
+      <td>{{emp.lastname}}</td>
+      <td>{{emp.email}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+<!-- <h3>List of Employee</h3>
+<table>
+  <thead>
+    <tr>
+      <th scope="col">FIRSTNAME</th>
+      <th scope="col">LASTNAME</th>
+      <th scope="col">EMAIL</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employees">
+
+      <td>{{emp.firstname}}</td>
+      <td>{{emp.lastname}}</td>
+      <td>{{emp.email}}</td>
+
+    </tr>
+  </tbody>
+</table> -->

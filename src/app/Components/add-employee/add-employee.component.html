@@ -1,0 +1,30 @@
+<div class="text-center text-primary">
+  <h2>Add Employee</h2>
+  
+
+</div>
+
+
+  <div class="card mt-5 border border-info-subtle border border-3 rounded " style="width: 35rem; margin: 0 auto;">
+
+    <div class="card-body">
+      <form [formGroup]=" addEmployeeForm" (ngSubmit)="onFormSubmit()">
+        <div class="mb-3 ">
+          <label class="form-label p-2 mb-1 bg-info-subtle text-emphasis-info">First Name</label>
+          <input type="text" class="form-control border border-info-subtle border border-3"formControlName="firstname" >
+        </div>
+        <div class="mb-3 ">
+          <label class="form-label p-2 mb-1 bg-info-subtle text-emphasis-info ">Last Name</label>
+          <input type="text" class="form-control border border-info-subtle border border-3"formControlName="lastname" >
+        </div>
+        <div class="mb-3 ">
+          <label class="form-label p-2 mb-1 bg-info-subtle text-emphasis-info">Email address</label>
+          <input type="text" class="form-control border border-info-subtle border border-3"formControlName="email" >
+        </div>
+        <button type="submit" class="btn btn-info" [disabled]="!addEmployeeForm.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
